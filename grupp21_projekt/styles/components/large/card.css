@@ -1,0 +1,62 @@
+
+
+.card{
+    
+  position: relative;
+  /* padding: 2rem; */
+  border-radius: 1rem;
+  
+  background-color: hsl(var(--hue-1), 10%, 90%, 80%);
+  
+    
+    
+    
+    
+    /*
+    hsl(hue, saturation, lightness)
+    hsl(nyans, mättnad, lätthet)
+    border-radius: 5px;
+    padding: up/höger/ner/vänster
+    margin-top: 4rem; */
+    
+}
+.card__header{
+    background-color: hsl(var(--hue-3), 75%, 50%);
+    border-radius: 1rem 1rem 0rem 0rem;
+    color: var(--white);
+    padding: 3.5rem 1rem 1rem 2rem;
+    background-image: linear-gradient(to right bottom ,hsl(var(--hue-3), 75%, 25%),hsl(var(--hue-3), 50%, 55%));
+    
+    
+
+}
+.card__heading {
+    font-size: 2.7rem;
+    
+}
+.card__heading__sub {
+    display: block;
+    font-size: 1.5rem;
+}
+footer{
+   
+    border-radius: 0rem 0rem 1rem 1rem;
+    
+    
+}
+.card__button{
+    display: inline-block;
+    background-color: wheat;
+    padding: 1rem 0rem 1rem 0rem;
+    border-radius: 1rem;
+    
+
+}
+
+
+/*.card card--danger
+{
+background-image: linear-gradient(to right bottom ,hsl(var(--hue-3), 75%, 25%),hsl(var(--hue-3), 50%, 55%));
+}
+
+*/

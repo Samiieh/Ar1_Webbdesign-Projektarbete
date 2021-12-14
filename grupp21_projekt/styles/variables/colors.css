@@ -1,18 +1,18 @@
 @charset "UTF-8";
 :root {
-  --base-hue-1: 207;
-  --base-hue-2: 233;
-  --base-hue-3: 333;
-  --base-hue-4: 153;
-  --base-hue-5: 45;
+  --base-hue-1: 207; /* blå */
+  --base-hue-2: 233; /* lila */
+  --base-hue-3: 333; /* röd */
+  --base-hue-4: 153; /* grön */
+  --base-hue-5: 45;  /* gul */
 
   --shift: 5;
 
-  --hue-1: calc(var(--base-hue-1) + var(--shift));
-  --hue-2: calc(var(--base-hue-2) + var(--shift));
-  --hue-3: calc(var(--base-hue-3) + var(--shift));
-  --hue-4: calc(var(--base-hue-4) + var(--shift));
-  --hue-5: calc(var(--base-hue-5) + var(--shift));
+  --hue-1: calc(var(--base-hue-1) + var(--shift)); /* blå */
+  --hue-2: calc(var(--base-hue-2) + var(--shift)); /* lila */
+  --hue-3: calc(var(--base-hue-3) + var(--shift)); /* röd */
+  --hue-4: calc(var(--base-hue-4) + var(--shift)); /* grön */
+  --hue-5: calc(var(--base-hue-5) + var(--shift)); /* gul */
 
   --white-hue: var(--hue-1);
   --white: hsl(var(--white-hue), 100%, 96%);
