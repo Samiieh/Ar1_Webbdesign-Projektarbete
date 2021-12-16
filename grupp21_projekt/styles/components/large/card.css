@@ -1,34 +1,53 @@
 
 
+    
 .card{
     
   position: relative;
-  /* padding: 2rem; */
   border-radius: 1rem;
-  
+  /* padding: 2rem; */
   background-color: hsl(var(--hue-1), 10%, 90%, 80%);
+  box-shadow: 5px 5px 20px hsl(var(--black-hue), 10%, 40%);
   
-    
-    
-    
-    
-    /*
-    hsl(hue, saturation, lightness)
-    hsl(nyans, mättnad, lätthet)
-    border-radius: 5px;
-    padding: up/höger/ner/vänster
-    margin-top: 4rem; */
+  /*
+  hsl(hue, saturation, lightness)
+  hsl(nyans, mättnad, lätthet)
+  border-radius: 5px;
+  padding: up/höger/ner/vänster
+  margin-top: 4rem; */
     
 }
+
 .card__header{
-    background-color: hsl(var(--hue-3), 75%, 50%);
+    background-image: url('/img/icons/globe.svg');
+    background-color: hsl(var(--hue-3), 70%, 50%);
     border-radius: 1rem 1rem 0rem 0rem;
     color: var(--white);
     padding: 3.5rem 1rem 1rem 2rem;
-    background-image: linear-gradient(to right bottom ,hsl(var(--hue-3), 75%, 25%),hsl(var(--hue-3), 50%, 55%));
+    margin: 5rem 0rem 3rem 0rem;
+    background-image: linear-gradient(to right bottom ,hsl(var(--hue-3), 60%, 18%),hsl(var(--hue-3), 70%, 61%));
+    position: relative;
+}
+.card__header__icon{
+    box-sizing: content-box;
+    z-index: 0;
+    height: 45px;
+    position: absolute;
+    bottom: 0%;
+    right: -4%;
+    border: solid hsl(var(--hue-3), 50%, 50%, 90%) .7rem;
+    transform: translate(-50%, 50%);
+    background-color: hsl(var(--hue-3), 40%, 45%, 100%);
+    border-radius: 50px;
+    box-shadow: 1px .5px 15px 1px hsl(var(--black-hue), 55%, 65%, 20%);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
     
-    
-
+}
+.card__content__text{
+    padding-left: 1.5rem;
+    padding-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 .card__heading {
     font-size: 2.7rem;
@@ -38,25 +57,84 @@
     display: block;
     font-size: 1.5rem;
 }
-footer{
-   
+.card__footer {
+    border-top: solid hsl(var(--hue-3), 70%, 40%, 70%) .2rem;
     border-radius: 0rem 0rem 1rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    
+    
     
     
 }
 .card__button{
-    display: inline-block;
-    background-color: wheat;
-    padding: 1rem 0rem 1rem 0rem;
-    border-radius: 1rem;
     
-
+    display: inline-block;
+    background-color: hsl(var(--hue-3), 78%, 32%, 95%);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1.7rem;
+    
+    /* justify-content:right;
+    flex-direction: row;
+    align-items: flex-end; */
+    
 }
 
+.card__button__text {
+    color: var(--white);
+    
+}
 
-/*.card card--danger
+/* 
+button:hover {
+    
+    text-decoration: none;
+    background-color: var(--white);
+    border: 1px solid hsl(var(--hue-3), 78%, 32%, 95%);
+    color: hsl(var(--hue-3), 78%, 32%);
+    padding: 1.4rem;
+    /*border-radius: 1rem;
+    margin: 1rem;
+} */
+a{
+    text-decoration: none;
+    background-color: hsl(var(--hue-3), 78%, 32%, 95%);
+    border: 1px solid hsl(var(--hue-3), 78%, 32%, 95%);
+    color: hsl(var(--hue-3), 78%, 32%);
+    border-radius: 1rem;
+    margin: 1rem;
+    
+    padding: 1rem 1.4rem 1rem 1.4rem;
+}
+a:hover{
+    color: hsl(var(--hue-3), 78%, 32%, 95%);
+    background-color: var(--white);
+    text-decoration: none;
+    cursor: default;
+}
+/*.card__button:hover {
+    background-color: var(--white);
+    border: .5px solid hsl(var(--hue-3), 78%, 32%, 95%);
+    
+}
+.card__button__text:hover {
+    color: hsl(var(--hue-3), 78%, 32%, 95%);
+    text-decoration: none;
+}*/
+.card__button__text:visited {
+    color: var(--white); 
+    text-decoration: none;      
+}
+    
+    
+/* specificity på ursprungs kortet får inte överstiga 2 klaser tex: 0/2/0*/
+.card .card--danger
 {
 background-image: linear-gradient(to right bottom ,hsl(var(--hue-3), 75%, 25%),hsl(var(--hue-3), 50%, 55%));
 }
+    
+    
+    
+    
 
-*/
