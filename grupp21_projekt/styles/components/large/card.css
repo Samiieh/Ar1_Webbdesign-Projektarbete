@@ -18,7 +18,7 @@
     color: var(--white);
     padding: 3.5rem 1rem 1rem 2rem;
     margin: 5rem 0rem 3rem 0rem;
-    background-image: linear-gradient(to right bottom ,hsl(var(--hue-1), 60%, 18%),hsl(var(--hue-1), 70%, 61%));
+    background-image: linear-gradient(to right bottom ,hsl(var(--hue-1), 50%, 18%),hsl(var(--hue-1), 70%, 61%));
     position: relative;
 }
 .card__header__icon{
