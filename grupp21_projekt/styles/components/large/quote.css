@@ -1,0 +1,41 @@
+.quote {
+    background-color: hsl(var(--hue-2), 50%, 70%);
+    box-shadow: 10px 10px 20px;
+    border-radius: 1rem;
+    width: 90vw;
+    margin: 30rem auto auto auto;
+}
+/* .quote::before {
+    content: "";
+    position: absolute;
+} */
+
+.quote__header{
+    background-color: hsl(var(--hue-2), 40%, 50%);
+    height: 3rem;
+    position: relative;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+.quote__text{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+
+}
+.quote__footer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.quote__footer__text{
+    padding: 1rem;
+}
+.quote__image{
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    left: 0%;
+    /* transform: translate( 20%, -83%); */
+    margin-top: auto;
+    
+}
