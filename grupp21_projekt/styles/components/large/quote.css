@@ -25,12 +25,16 @@
     
 }
 .quote__text{
-    font-weight:bolder;
+    font-weight: bolder;
     font-size: 2.5rem;
     padding: 1.5rem;
     color: var(--white);
     text-shadow: 2px 2px black;
-    opacity: 0;
+    opacity: 1;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .quote__footer{
@@ -60,7 +64,10 @@ background: linear-gradient(220deg, rgba(18,145,88,1) 1%, rgba(145,15,73,1) 59%,
     border-radius: 0rem 0rem 1rem 1rem;
     box-shadow: 0px 10px 10px;
 }
-.quote__text:hover:after {
+.quote__text:hover {
+    font-size: 0;
+}
+.quote__text:hover::after {
     content: attr(data-hover);
     color: var(--white);
     display: flex;
