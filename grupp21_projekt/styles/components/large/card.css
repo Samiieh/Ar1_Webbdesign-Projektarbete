@@ -7,9 +7,9 @@
 .card{
   position: relative;
   border-radius: 1rem;
-  background-color: hsl(var(--hue-1), 10%, 90%, 80%);                        /* hsl(hue, saturation, lightness) */
+  background-color: hsl(var(--hue-1), 10%, 90%, 80%);    
   box-shadow: 5px 5px 20px hsl(var(--black-hue), 10%, 40%); 
-  
+   /* hsl(hue, saturation, lightness)*/
   /* hsl(nyans, mättnad, lätthet) */                                                           
 }
 .card__header{
@@ -73,7 +73,7 @@
     padding: 1rem 1.4rem 1rem 1.4rem;
 }
 .card__button__text:visited {
-    color: var(--white); /*hsl(var(--hue-1), 78%, 32%, 95%);*/
+    color: var(--white); 
     background-color: hsl(var(--hue-1), 78%, 32%, 95%); 
     text-decoration: none;      
 }

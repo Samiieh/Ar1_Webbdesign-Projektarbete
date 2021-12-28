@@ -1,28 +1,26 @@
 @media only screen and (min-width: 768px)
 {
-    .card__container {
+    .our__container {
         display: flex;
         flex-direction: column;
         gap: 4.5rem;
         width: 100%;
         align-items: flex-end;
-      
-
     }
-    .glass {
+    .our__item1 {
         width: 80%;
         align-self: flex-start;
     }
-    .card {
+    .our__item2, .our__item3, .our__item4 {
         
         align-items: flex-start;
         width: 80%;
         gap: 2rem;
     }
-    .card__container :nth-child(3){
-        align-self: flex-start; 
+    .our__item3 {
+        align-self: flex-start;
     }
-
+   
     .card__header {
         margin: 0px;
     }
@@ -36,37 +34,25 @@
 /*------------------ 1024 -------------------*/
 
   @media only screen and (min-width: 1024px) {
-
-      .container {
-          display: grid;
-      }
-    
-       .card__container {         
-          
-          box-sizing: border-box;
+        
+       .our__container {   
           display: grid; 
           gap: 1rem;
           grid-template-columns: repeat(2, 1fr);         
           grid-template-rows: repeat(2, 1fr); 
-          grid-auto-rows: 1fr;
-          grid-template-areas:  
-          ". ." 
-    
-          ". .";     
       } 
           
       .card__content { 
           padding: 2rem 1rem 1rem 1rem; 
       } 
-      .card, .glass {         
+      .our__item {         
     
           width: 100%; 
       } 
-      .card__content--modify { 
-    
+      .card__content--modify {     
           margin-bottom: 2.2rem; 
       } 
-      .glass{
+      .our__item1 {
           
           padding-bottom: 6.5rem;  
           width: 100%;
@@ -75,23 +61,11 @@
 }
       
       
-      @media only screen and (min-width: 1408px) {
-          .glass{
-              padding-bottom: 2rem; 
-          }
-      }   
-/*     .card__container{
-        display: flex;
-        flex-basis: 100%;
-        flex-wrap: wrap;
-        width: 100%;
-
-    }
-    .flex__container {
-        width: 80%;
-        align-self: flex-start;
-        padding: 2rem;
-    } */
+    @media only screen and (min-width: 1408px) {
+        .our__item1 {
+            padding-bottom: 2rem; 
+        }
+    }   
 
     
     

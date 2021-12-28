@@ -1,16 +1,14 @@
 .quote {
-    /* background-color: hsl(var(--hue-2), 50%, 70%); */
     
     border-radius: 1rem;
     width: 90vw;
     margin: 30rem auto auto auto;
-    background: rgb(18,88,145);
-    background: linear-gradient(150deg, rgba(18,88,145,1) 1%, rgba(145,15,73,1) 50%, rgba(18,145,88,1) 100%);
+    background: hsl(var(--hue-1), 78%, 32%, 95%);
+    background: linear-gradient(150deg, hsl(var(--hue-1), 78%, 32%, 95%) 1%, hsl(var(--hue-3), 78%, 32%, 95%) 50%, hsl(var(--hue-4), 78%, 32%, 95%) 100%);
+    box-shadow: 10px 10px 20px hsl(var(--black-hue), 10%, 40%);
+
 }
-/* .quote::before {
-    content: "";
-    position: absolute;
-} */
+
 
 .quote__header{
     opacity: 1;
@@ -19,17 +17,14 @@
     border-radius: 1rem 1rem 0rem 0rem;
 }
 
-.quote__header:hover {
-    opacity: 1;
-    background-color: hsl(var(--hue-2), 40%, 50%);
-    
-}
+
+
 .quote__text{
     font-weight: bolder;
     font-size: 2.5rem;
     padding: 1.5rem;
     color: var(--white);
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px hsl(var(--black-hue), 10%, 40%);
     opacity: 1;
     height: 10rem;
     display: flex;
@@ -41,28 +36,26 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    /* background: rgb(18,145,88);
-background: linear-gradient(220deg, rgba(18,145,88,1) 1%, rgba(145,15,73,1) 59%, rgba(18,88,145,1) 100%); */
+   
 }
 .quote__footer__text{
     padding: 1rem;
     color: var(--white);
     font-style:italic;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px hsl(var(--black-hue), 10%, 40%);
 }
 .quote__image{
     position: absolute;
     opacity: 1;
     z-index: 1;
     bottom: 0%;
-    left: 0%;
-    /* transform: translate( 20%, -83%); */
+    left: 0%;    
     margin-top: auto;
 }
 
 .quote__quote {
     border-radius: 0rem 0rem 1rem 1rem;
-    box-shadow: 0px 10px 10px;
+    
 }
 .quote__text:hover {
     font-size: 0;
@@ -72,7 +65,7 @@ background: linear-gradient(220deg, rgba(18,145,88,1) 1%, rgba(145,15,73,1) 59%,
     color: var(--white);
     display: flex;
     justify-content: center;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px hsl(var(--black-hue), 10%, 40%);
     font-size: 2rem;
     line-height: 2rem;
 
@@ -88,10 +81,10 @@ background: linear-gradient(220deg, rgba(18,145,88,1) 1%, rgba(145,15,73,1) 59%,
  @keyframes moveIn {
     0% {
         opacity: 0;
-        transform: translate(0);
+     
     }
     100% {
         opacity: 1;
-        transform: translate(0);
+     
     }
 } 
