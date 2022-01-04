@@ -9,7 +9,7 @@
   border-radius: 1rem;
   background-color: hsl(var(--hue-1), 10%, 90%, 80%);    
   box-shadow: 5px 5px 20px hsl(var(--black-hue), 10%, 40%); 
-   /* hsl(hue, saturation, lightness)*/
+    /* hsl(hue, saturation, lightness)*/
   /* hsl(nyans, mättnad, lätthet) */                                                           
 }
 .card__header{
@@ -85,3 +85,29 @@
 } 
 
 
+@media only screen and (min-width: 768px)
+{
+
+    .card__header {
+        margin: 0px;
+    }
+    .card__content {
+        padding: 2rem 7rem 1rem 1rem;
+        
+    }
+}
+@media only screen and (min-width: 1024px)
+{
+    .glass {
+        padding-bottom: 6.5rem !important; /* fråga alle om denna, varför fungerar det i studentens-gridsystem utan important men inte här */
+    }
+    
+    .card__content { 
+        padding: 2rem 1rem 1rem 1rem; 
+    } 
+
+   
+      .card__content--modify {     
+        margin-bottom: 2.2rem; 
+    } 
+}
