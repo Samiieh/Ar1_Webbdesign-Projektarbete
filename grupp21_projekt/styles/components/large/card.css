@@ -4,26 +4,25 @@
 .card--success {
     --hue-1: var(--hue-4);
 }
+
 .card{
-  position: relative;
-  border-radius: 1rem;
-  background-color: hsl(var(--hue-1), 10%, 90%, 80%);    
-  box-shadow: 5px 5px 20px hsl(var(--black-hue), 10%, 40%); 
+    border-radius: 1rem;
+    background-color: hsl(var(--hue-1), 10%, 90%, 80%);    
+    box-shadow: 5px 5px 20px hsl(var(--black-hue), 10%, 40%); 
     /* hsl(hue, saturation, lightness)*/
-  /* hsl(nyans, mättnad, lätthet) */                                                           
+    /* hsl(nyans, mättnad, lätthet) */                                                           
 }
 .card__header{
     background-color: hsl(var(--hue-1), 70%, 50%);
     border-radius: 1rem 1rem 0rem 0rem;
     color: var(--white);
     padding: 3.5rem 1rem 1rem 2rem;
-    margin: 5rem 0rem 3rem 0rem;
     background-image: linear-gradient(to right bottom ,hsl(var(--hue-1), 50%, 18%),hsl(var(--hue-1), 70%, 61%));
     position: relative;
 }
 .card__header__icon{
     box-sizing: content-box;    
-    height: 45px;
+    width: 45px;
     position: absolute;
     bottom: 0%;
     right: 0%;
@@ -34,20 +33,20 @@
     box-shadow: 1px .5px 15px 1px hsl(var(--black-hue), 55%, 65%, 20%);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
 }
+.card__content{
+    padding: 3rem 3rem 1rem 1rem;
 
+}
 .card__content__text{
     padding-left: 1.5rem;
     padding-bottom: 2rem;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    
 }
 .card__heading {
     font-size: 2.7rem;
     
-}
-.card__heading__sub {
-    display: block;
-    font-size: 1.5rem;
 }
 .card__footer {
     border-top: solid hsl(var(--hue-1), 70%, 40%, 70%) .2rem;
@@ -87,7 +86,6 @@
 
 @media only screen and (min-width: 768px)
 {
-
     .card__header {
         margin: 0px;
     }
@@ -98,16 +96,11 @@
 }
 @media only screen and (min-width: 1024px)
 {
-    .glass {
-        padding-bottom: 6.5rem !important; /* fråga alle om denna, varför fungerar det i studentens-gridsystem utan important men inte här */
-    }
-    
-    .card__content { 
-        padding: 2rem 1rem 1rem 1rem; 
-    } 
-
-   
-      .card__content--modify {     
-        margin-bottom: 2.2rem; 
+    .card__content--modify {     
+        padding-block: 2.7rem;
     } 
 }
+
+    
+    
+      
