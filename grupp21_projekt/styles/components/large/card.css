@@ -1,11 +1,10 @@
-.card--danger {
+.card--danger {                             /* Class som gör custom properties från blå (1) till röd (3) */
     --hue-1: var(--hue-3);
 }
-.card--success {
+.card--success {                            /* Class som gör custom properties från blå (1) till grön (4) */
     --hue-1: var(--hue-4);
 }
-
-.card{
+.card{                                      /* "bakgrunden till card" */
     border-radius: 1rem;
     background-color: hsl(var(--hue-1), 10%, 90%, 80%);    
     box-shadow: 5px 5px 20px hsl(var(--black-hue), 10%, 40%); 
@@ -15,60 +14,48 @@
 .card__header{
     background-color: hsl(var(--hue-1), 70%, 50%);
     border-radius: 1rem 1rem 0rem 0rem;
-    color: var(--white);
+    color: var(--white);                      
     padding: 3.5rem 1rem 1rem 2rem;
     background-image: linear-gradient(to right bottom ,hsl(var(--hue-1), 50%, 18%),hsl(var(--hue-1), 70%, 61%));
     position: relative;
 }
 .card__header__icon{
-    box-sizing: content-box;    
+    box-sizing: content-box;                /* Bättre koll på ikonens storlek */
     width: 45px;
     position: absolute;
-    bottom: 0%;
+    bottom: 0%;                              /* Startpunk för uträkning */
     right: 0%;
     border: solid hsl(var(--hue-1), 50%, 50%, 90%) .7rem;
-    transform: translate(-20%, 50%); /*x, y*/
+    transform: translate(-20%, 50%);                   /*x, y*/
     background-color: hsl(var(--hue-1), 50%, 50%, 90%);
-    border-radius: 50px;
+    border-radius: 50px; 
     box-shadow: 1px .5px 15px 1px hsl(var(--black-hue), 55%, 65%, 20%);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
 }
-.card__content{
+.card__heading {
+    font-size: 2.7rem;
+}
+.card__content{                            /* padding så att texten inte flyter in i ikonen */
     padding: 3rem 3rem 1rem 1rem;
-
 }
 .card__content__text{
     padding-left: 1.5rem;
     padding-bottom: 2rem;
     font-weight: 300;
     font-size: 1.3rem;
-    
-}
-.card__heading {
-    font-size: 2.7rem;
-    
 }
 .card__footer {
-    border-top: solid hsl(var(--hue-1), 70%, 40%, 70%) .2rem;
+    border-top: solid hsl(var(--hue-1), 70%, 40%, 70%) .2rem;               /* sträcket */
     border-radius: 0rem 0rem 1rem 1rem;
     display: flex;
     justify-content: flex-end;
-    
-}
-.card__button__text {
-    color: var(--white);
-    
 }
 .card__button__text{
     text-decoration: none;
     background-color: hsl(var(--hue-1), 78%, 32%, 95%);
     border: 1px solid hsl(var(--hue-1), 78%, 32%, 95%);
-    color: hsl(var(--hue-1), 78%, 32%);
     border-radius: 1rem;
     margin: 1rem;
-    color: var(--white);
-    
-    
     padding: 1rem 1.4rem 1rem 1.4rem;
 }
 .card__button__text:visited {
@@ -83,12 +70,8 @@
     cursor: default;
 } 
 
-
 @media only screen and (min-width: 768px)
 {
-    .card__header {
-        margin: 0px;
-    }
     .card__content {
         padding: 2rem 7rem 1rem 1rem;
         
@@ -96,11 +79,7 @@
 }
 @media only screen and (min-width: 1024px)
 {
-    .card__content--modify {     
+    .card__content--modify {             /* padding uppåt och neråt */
         padding-block: 2.7rem;
     } 
 }
-
-    
-    
-      

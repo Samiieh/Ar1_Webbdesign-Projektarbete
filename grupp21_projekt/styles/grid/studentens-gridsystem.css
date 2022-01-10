@@ -1,49 +1,41 @@
-
-.our__container{
+.our__container{                                             /* Där alla korten ligger */
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);                   /* En kolumn med en fraction i mobile-läge */
 }
+
+/*------------------ 768 -------------------*/
 
 @media only screen and (min-width: 768px)
 {
-
     .our__container{
-        
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 1fr);               /* Skapar 5 kolumner med en fraction i 768-läge */
     }
-    .our__item1, .our__item3{
-        
-        /* grid-column: 1/6; */
+    .our__item1, .our__item3{                                /* Placering av card 1 och 3, som ligger i rutnät 1 till 5 */
         grid-column-start: 1;
         grid-column-end: 5;
     }
-    .our__item2, .our__item4{
-        
-       /*  grid-column: 2/6; */
-       grid-column-start: 2;
+    .our__item2, .our__item4{                                /* Placering av card 2 och 4, som ligger i rutnät 2 till 6 */
+        grid-column-start: 2;
         grid-column-end: 6;
-       
-    }
+     }
+ }
+ 
+ /*------------------ 1024 -------------------*/
+ 
+ @media only screen and (min-width: 1024px) {
+     .our__container {   
+         grid-template-columns: repeat(2, 1fr);               /* Skapar 2 kolumner med en fraction i 1024-läge */
+       } 
+       .our__item1, .our__item3{                              /* Placering av card 1 och 3, som ligger i rutnät 1 till 2 */
+           grid-column-start: 1;
+           grid-column-end: 2;
+       }
+       .our__item2, .our__item4{                              /* Placering av card 2 och 4, som ligger i rutnät 2 till 3 */
+           grid-column-start: 2;
+           grid-column-end: 3;
+       }
 }
-/*------------------ 1024 -------------------*/
-
-  @media only screen and (min-width: 1024px) {
-        
-       .our__container {   
-         
-          grid-template-columns: repeat(2, 1fr);         
-        } 
-        .our__item1, .our__item3{
-            
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-        .our__item2, .our__item4{
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
-    }
 
 
 
