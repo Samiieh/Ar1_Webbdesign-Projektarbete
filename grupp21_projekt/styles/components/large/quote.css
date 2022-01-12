@@ -37,7 +37,7 @@
     font-style:italic;
 }
 .quote__text:hover::after {          /* Texten som kommer fram efter man hovrar */
-    content: attr(data-hover);       /* Content till psuedo-klassen, after och before fungerar inte utan content. attr hänvisas till data-hover. */
+    content: attr(data-hover);       /* Content till psuedo-elementet, after och before fungerar inte utan content. attr hänvisas till data-hover. */
     color: var(--white);
     display: flex;
     justify-content: center;
