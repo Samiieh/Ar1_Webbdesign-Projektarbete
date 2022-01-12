@@ -26,7 +26,7 @@
     bottom: 0%;                              /* Startpunk för uträkning */
     right: 0%;
     border: solid hsl(var(--hue-1), 50%, 50%, 90%) .7rem;
-    transform: translate(-20%, 50%);                   /*x, y*/
+    transform: translate(-20%, 50%);                 /*x, y*/
     background-color: hsl(var(--hue-1), 50%, 50%, 90%);
     border-radius: 50px; 
     box-shadow: 1px .5px 15px 1px hsl(var(--black-hue), 55%, 65%, 20%);
@@ -51,17 +51,16 @@
     justify-content: flex-end;
 }
 .card__button__text{
-    text-decoration: none;
     background-color: hsl(var(--hue-1), 78%, 32%, 95%);
     border: 1px solid hsl(var(--hue-1), 78%, 32%, 95%);
     border-radius: 1rem;
     margin: 1rem;
     padding: 1rem 1.4rem 1rem 1.4rem;
+    color: var(--white);
 }
 .card__button__text:visited {
     color: var(--white); 
-    background-color: hsl(var(--hue-1), 78%, 32%, 95%); 
-    text-decoration: none;      
+    background-color: hsl(var(--hue-1), 78%, 32%, 95%);    
 }
 .card__button__text:hover{
     color: hsl(var(--hue-1), 78%, 32%, 95%);
