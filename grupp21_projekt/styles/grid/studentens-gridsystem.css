@@ -1,13 +1,22 @@
-.our__container{                                             /* Där alla korten ligger */
+.our__container {                                             /* Där alla korten ligger */
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr;                   /* En kolumn med en fraction i mobile-läge */
 }
-
+.quote__container {  
+    display:grid; 
+    gap: 1rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);    
+}
+.quote__item {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 2;
+}
 /*------------------ 768 -------------------*/
 
-@media only screen and (min-width: 768px)
-{
+@media only screen and (min-width: 768px) {
     .our__container{
         grid-template-columns: repeat(5, 1fr);               /* Skapar 5 kolumner med en fraction i 768-läge */
     }
@@ -36,75 +45,3 @@
            grid-column-end: 3;
        }
 }
-
-
-
-        
-        
-       
-        
-          
-      
-
-        
-       
-    
-      
-      
-      
-   
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
- 
-
-
-
-
-
-        
-
-
-
-         
-       

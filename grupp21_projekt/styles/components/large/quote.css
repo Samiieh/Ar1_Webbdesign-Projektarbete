@@ -1,22 +1,19 @@
 .quote {
     border-radius: 1rem;
-    width: 90vw;
-    margin: 30rem auto auto auto;    /* 30 margin uppåt */
-    background: hsl(var(--hue-1), 78%, 32%, 95%);   /* Backup-färgen, ifall webbläsaren inte kan läsa gradient slår denna färg in */
-    background: linear-gradient(150deg, hsl(var(--hue-1), 78%, 32%, 95%) 6%, hsl(var(--hue-3), 78%, 32%, 95%) 50%, hsl(var(--hue-4), 78%, 32%, 95%) 94%); 
+    background: hsl(var(--hue-1), 78%, 32%);   /* Backup-färgen, ifall webbläsaren inte kan läsa gradient slår denna färg in */
+    background: linear-gradient(150deg, hsl(var(--hue-1), 78%, 32%) 6%, hsl(var(--hue-3), 78%, 32%) 50%, hsl(var(--hue-4), 78%, 32%) 94%); 
     /* 150deg = vinkeln , % = mängden uprymme den färgen tar. Hue 1 = blått , Hue 3 = Rött , Hue 4 =grön */
     box-shadow: 10px 10px 20px hsl(var(--black-hue), 10%, 40%);
 }   /* offset-x | offset-y | blur-radius | color */ 
 
-.quote__header{
-    height: 3rem;                    /* Vi har lagt till height så att headen kan fyllas ut */
+.quote__header{   
     position: relative;              /* Position som bilden kan relatera till */
+    padding: 15px;
 }
 .quote__image{
     position: absolute; 
-    bottom: 0%;                      /* Så att hon börjar nedifrån */
-    left: 0%;                        /* Så att hon placeras till vänster */
-    margin-top: auto;
+    bottom: 0;                      /* Så att hon börjar nedifrån */
+    left: 0;                        /* Så att hon placeras till vänster */
 }
 .quote__text{
     font-size: 2rem;
@@ -24,12 +21,12 @@
     color: var(--white);
     height: 10rem;                   /* Heighten är där för att fylla ut utrymme, så att hovern inte hackar */
     display: flex;
-    align-items: center;             /* Centrerar innehållet  */
-    justify-content: center;
+    align-items: center;             /* Centrerar innehållet vertikalt  */
+    justify-content: center;         /* centerar innnehållet horisontellt*/
 }
 .quote__footer{
     display: flex;
-    justify-content: end;            /* För att den ska lägga sig i högra hörnet */
+    justify-content: right;            /* För att den ska lägga sig i högra hörnet */
 }
 .quote__footer__text{
     padding: 1rem;
@@ -37,10 +34,8 @@
     font-style:italic;
 }
 .quote__text:hover::after {          /* Texten som kommer fram efter man hovrar */
-    content: attr(data-hover);       /* Content till psuedo-elementet, after och before fungerar inte utan content. attr hänvisas till data-hover. */
+    content: attr(data-hover);       /* Content till psuedo-elementet, after och before fungerar inte utan keyword content. attr hänvisas till data-hover. */
     color: var(--white);
-    display: flex;
-    justify-content: center;
     font-size: 2rem;
     line-height: 2rem;                /* Radavstånd */
 }

@@ -6,28 +6,31 @@
 }
 .card{                                      /* "bakgrunden till card" */
     border-radius: 1rem;
-    background-color: hsl(var(--hue-1), 10%, 90%, 80%);    
-    box-shadow: 5px 5px 20px hsl(var(--black-hue), 10%, 40%); 
+    background-color: hsl(var(--hue-1), 10%, 90%);    
+    box-shadow: 5px 5px 20px hsl(var(--black-hue), 10%, 40%);
+    /* offset-x | offset-y | blur-radius | color */ 
     /* hsl(hue, saturation, lightness)*/
-    /* hsl(nyans, mättnad, lätthet) */                                                           
+    /* hsl(nyans, mättnad, lätthet) */
+    display: grid;    
+    grid-template-rows: auto auto 8rem;                                                           
 }
 .card__header{
-    background-color: hsl(var(--hue-1), 70%, 50%);
+    background-color: hsl(var(--hue-1), 70%, 50%); /* backupp ifall linear-gradient inte kan laddas */
     border-radius: 1rem 1rem 0rem 0rem;
     color: var(--white);                      
     padding: 3.5rem 1rem 1rem 2rem;
     background-image: linear-gradient(to right bottom ,hsl(var(--hue-1), 50%, 18%),hsl(var(--hue-1), 70%, 61%));
     position: relative;
 }
-.card__header__icon{
+.card__icon{
     position: absolute;
     width: 56.5px;
-    bottom: 0%;                              /* Startpunk för uträkning */
-    right: 0%;
-    border: solid hsl(var(--hue-1), 50%, 50%, 90%) 8px;
+    bottom: 0;                              /* Startpunk för uträkning */
+    right: 0;
+    border: solid hsl(var(--hue-1), 50%, 50%) 8px;
     transform: translate(-20%, 50%);                 /*x, y*/
-    background-color: hsl(var(--hue-1), 50%, 50%, 90%);
-    border-radius: 50px; 
+    background-color: hsl(var(--hue-1), 50%, 50%);
+    border-radius: 50px;                   
     box-shadow: 1px .5px 15px 1px hsl(var(--black-hue), 55%, 65%, 20%);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
 }
@@ -37,32 +40,32 @@
 .card__content{                            /* padding så att texten inte flyter in i ikonen */
     padding: 3rem 3rem 1rem 1rem;
 }
-.card__content__text{
+.card__text{
     padding-left: 1.5rem;
     padding-bottom: 2rem;
     font-weight: 300;
     font-size: 1.3rem;
 }
 .card__footer {
-    border-top: solid hsl(var(--hue-1), 70%, 40%, 70%) .2rem;               /* sträcket */
+    border-top: solid hsl(var(--hue-1), 70%, 40%) .2rem;               /* sträcket */
     border-radius: 0rem 0rem 1rem 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
 }
-.card__button__text{
-    background-color: hsl(var(--hue-1), 78%, 32%, 95%);
-    border: 1px solid hsl(var(--hue-1), 78%, 32%, 95%);
+.card__button{
+    background-color: hsl(var(--hue-1), 78%, 32%);
+    border: 1px solid hsl(var(--hue-1), 78%, 32%);
     border-radius: 1rem;
-    margin: 1rem;
+    margin: auto 1rem auto auto;
     padding: 1rem 1.4rem 1rem 1.4rem;
     color: var(--white);
 }
-.card__button__text:visited {
+.card__button:visited {
     color: var(--white); 
-    background-color: hsl(var(--hue-1), 78%, 32%, 95%);    
+    background-color: hsl(var(--hue-1), 78%, 32%);    
 }
-.card__button__text:hover{
-    color: hsl(var(--hue-1), 78%, 32%, 95%);
+.card__button:hover{
+    color: hsl(var(--hue-1), 78%, 32%);
     background-color: var(--white);
     text-decoration: none;
     cursor: default;
@@ -71,13 +74,6 @@
 @media only screen and (min-width: 768px)
 {
     .card__content {
-        padding: 2rem 7rem 1rem 1rem;
-        
+        padding: 2rem 7rem 1rem 1rem;   /* för att texten inte ska gå in i ikonen */       
     }
-}
-@media only screen and (min-width: 1024px)
-{
-    .card__content--modify {             /* padding uppåt och neråt */
-        padding-block: 2.7rem;
-    } 
 }
