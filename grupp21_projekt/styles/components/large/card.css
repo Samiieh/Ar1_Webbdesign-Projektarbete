@@ -20,12 +20,11 @@
     position: relative;
 }
 .card__header__icon{
-    box-sizing: content-box;                /* Bättre koll på ikonens storlek */
-    width: 45px;
     position: absolute;
+    width: 56.5px;
     bottom: 0%;                              /* Startpunk för uträkning */
     right: 0%;
-    border: solid hsl(var(--hue-1), 50%, 50%, 90%) .7rem;
+    border: solid hsl(var(--hue-1), 50%, 50%, 90%) 8px;
     transform: translate(-20%, 50%);                 /*x, y*/
     background-color: hsl(var(--hue-1), 50%, 50%, 90%);
     border-radius: 50px; 

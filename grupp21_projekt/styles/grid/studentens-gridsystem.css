@@ -1,7 +1,7 @@
 .our__container{                                             /* Där alla korten ligger */
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(1, 1fr);                   /* En kolumn med en fraction i mobile-läge */
+    grid-template-columns: 1fr;                   /* En kolumn med en fraction i mobile-läge */
 }
 
 /*------------------ 768 -------------------*/
